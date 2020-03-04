@@ -56,9 +56,8 @@ public class Student extends Person{
 	/**
 	 * Funciones públicas
 	 */
-	@Override
-	public String toString() {
-		String result = super.toString();
+	public String print() {
+		String result = super.print();
 				
 		result += "\n Datos de Estudiante";
 		result += "\n Level: " + this.level;

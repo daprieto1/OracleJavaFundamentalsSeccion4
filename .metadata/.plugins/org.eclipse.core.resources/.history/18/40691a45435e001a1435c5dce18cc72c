@@ -19,10 +19,8 @@ public class School {
 		LocalDate fecha = LocalDate.now();		
 		System.out.println(fecha.toString());
 		System.out.println(fecha);
-		System.out.println(p);
-		System.out.println(s1);
 		
-		
+		System.out.println();
 		
 		
 	}

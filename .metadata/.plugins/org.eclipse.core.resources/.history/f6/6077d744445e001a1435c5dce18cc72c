@@ -20,9 +20,8 @@ public class School {
 		System.out.println(fecha.toString());
 		System.out.println(fecha);
 		System.out.println(p);
-		System.out.println(s1);
 		
-		
+		System.out.println();
 		
 		
 	}

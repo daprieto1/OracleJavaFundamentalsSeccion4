@@ -58,7 +58,7 @@ public class Student extends Person{
 	 */
 	@Override
 	public String toString() {
-		String result = super.toString();
+		String result = super.print();
 				
 		result += "\n Datos de Estudiante";
 		result += "\n Level: " + this.level;

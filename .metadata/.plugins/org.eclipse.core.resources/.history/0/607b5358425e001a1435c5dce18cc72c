@@ -14,17 +14,8 @@ public class School {
 		Student s1 = new Student("Pedro", 'm', 78234, new Date(2002,3,23));
 		Student s2 = new Student("José", 'm', 78234, new Date(2002,3,23), 75, 3, 3000, new String[][] {{"Matemáticas"}});
 		
-		
-		
-		LocalDate fecha = LocalDate.now();		
+		LocalDate fecha = LocalDate.now();
 		System.out.println(fecha.toString());
-		System.out.println(fecha);
-		System.out.println(p);
-		System.out.println(s1);
-		
-		
-		
-		
 	}
 	
 }

@@ -16,7 +16,7 @@ public class Person {
 	private char genere;
 	private Date birthDate;
 	public long cedula;
-
+	
 	/*
 	 * Constructor
 	 */
@@ -26,49 +26,39 @@ public class Person {
 		this.cedula = cedula;
 		this.birthDate = birthDate;
 	}
-
+	
 	/*
 	 * Métodos de acceso
 	 */
 	public String getName() {
 		return this.name;
 	}
-
+	
 	/*
 	 * Métodos de modificación
 	 */
 	public void setName(String name) {
 		this.name = name;
 	}
-
+	
 	public void setGenere(char genere) {
 		this.genere = genere;
 	}
-
+	
 	public void setBirthDate(Date birthDate) {
 		this.birthDate = birthDate;
 	}
-
+	
 	/*
 	 * Funciones publicas
 	 */
-	@Override
-	public String toString() {
-		String result = "\n Datos de Persona";
-
-		result += "\n Name: " + this.getName();
-		result += "\n Cedula: " + this.cedula;
-
-		return result;
-	}
-
 	public String print() {
 		String result = "\n Datos de Persona";
-
+		
 		result += "\n Name: " + this.getName();
 		result += "\n Cedula: " + this.cedula;
-
+		
 		return result;
 	}
-
+	
 }
