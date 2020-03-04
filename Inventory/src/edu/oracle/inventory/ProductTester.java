@@ -10,9 +10,11 @@ public class ProductTester {
 		products.add(new Product());
 		products.add(new Product());
 		
-		for (Product product : products) {
+		/*for (Product product : products) {
 			System.out.println(product);
-		}
+		}*/
+		
+		products.stream().forEach(p -> System.out.println(p.toString()));
 		
 	}
 	
