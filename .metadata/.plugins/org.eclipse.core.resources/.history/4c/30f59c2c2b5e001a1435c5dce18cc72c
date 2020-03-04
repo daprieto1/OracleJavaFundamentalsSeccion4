@@ -1,0 +1,38 @@
+package edu.oracle.school.models; // paquete donde esta ubicada mi clase
+
+import java.util.*; // importando la libreria java util
+
+/**
+ * Esta es la clase Persona
+ * 
+ * @author diegoprietotorres
+ *
+ */
+public class Person {
+	/*
+	 * Propiedades
+	 */
+	private String name;
+	private char genere;
+	private Date birthDate;
+	private long cedula;
+	
+	/*
+	 * Constructor
+	 */
+	
+	/*
+	 * Métodos de acceso
+	 */
+	public String getName() {
+		return this.name;
+	}
+	
+	/*
+	 * Métodos de modificación
+	 */
+	
+	/*
+	 * Demás métodos
+	 */
+}

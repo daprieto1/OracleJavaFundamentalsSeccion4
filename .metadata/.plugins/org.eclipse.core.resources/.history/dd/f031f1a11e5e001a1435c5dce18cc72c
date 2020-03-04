@@ -1,0 +1,25 @@
+package edu.oracle.example;
+
+import java.util.Scanner;
+
+public class HelloWorld {
+	
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		//Leer el nombre del estudiante
+		String grade = "";
+		grade = sc.hasNextLine();
+		
+		// Leer la definitiva del estudiante
+		// Mostrarv la nota del estudiante
+		System.out.println("La nota del estudiante es: " + grade);
+		
+		
+		/**
+		 * Aqui va un comentario muy largo
+		 * Esta es otra línea
+		 */
+	}
+	
+}

@@ -1,0 +1,18 @@
+package edu.oracle.school;
+
+import java.sql.Date;
+
+import edu.oracle.school.models.Person;
+
+public class School {
+	
+	public static void main(String args []) {
+		Person p = new Person("Jorge");
+		
+		p.setName("Jorge");
+		p.setGenere('m'); 
+		p.cedula = 12345;
+		p.setBirthDate(new Date(1993,12,23));
+	}
+	
+}

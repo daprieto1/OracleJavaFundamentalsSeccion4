@@ -1,0 +1,15 @@
+package edu.oracle.school;
+
+import java.sql.Date;
+import java.util.Stack;
+
+import edu.oracle.school.models.*;
+
+public class School {
+	
+	public static void main(String args []) {
+		Person p = new Person("Jorge",'m',12345,new Date(1993,12,23));
+		Student s = new Student("José", 'm', 78234, new Date(2002,3,23));
+	}
+	
+}

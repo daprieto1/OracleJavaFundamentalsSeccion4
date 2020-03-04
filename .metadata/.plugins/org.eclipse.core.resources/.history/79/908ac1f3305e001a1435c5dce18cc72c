@@ -1,0 +1,17 @@
+package edu.oracle.school.models;
+
+import java.util.Date;
+
+public class Student extends Person{
+	
+	private double grade;
+	private double montlySchoolBill;
+	private String[][] schedule;
+	private int level;
+	
+	public Student(String name, char genere, long cedula, Date birthDate) {
+		super(name, genere, cedula, birthDate);
+		// TODO Auto-generated constructor stub
+	}
+
+}

@@ -1,0 +1,5 @@
+package edu.oracle.school.models;
+
+public class Student extends Persona{
+
+}

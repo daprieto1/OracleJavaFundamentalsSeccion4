@@ -1,0 +1,35 @@
+package edu.oracle.school.models;
+
+import java.util.Date;
+
+/**
+ * Clase de Estudiante del Colegio Don Bosco
+ * 
+ * @author diegoprietotorres
+ *
+ */
+public class Student extends Person{
+	
+	private double grade;
+	private int level;
+	private double montlySchoolBill;
+	private String[][] schedule;	
+	
+	public Student(String name, char genere, long cedula, Date birthDate) {
+		super(name, genere, cedula, birthDate);		
+	}
+	
+	public Student(	String name, char genere, long cedula, Date birthDate, 
+					double grade, int level, double montlySchoolBill, String[][] schedule) {
+		super(name, genere, cedula, birthDate);
+		this.grade = grade;
+		this.level = level;
+		this.montlySchoolBill = montlySchoolBill;
+		this.schedule = schedule;
+	}
+	
+	public void setLevel(int level) {
+		this.level = level;
+	}
+
+}

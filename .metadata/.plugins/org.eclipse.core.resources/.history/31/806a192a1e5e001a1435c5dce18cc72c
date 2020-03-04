@@ -1,0 +1,20 @@
+package edu.oracle.example;
+
+public class HelloWorld {
+	
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		//Leer el nombre del estudiante
+		
+		// Leer la definitiva del estudiante
+		// Mostrarv la nota del estudiante
+		
+		
+		/**
+		 * Aqui va un comentario muy largo
+		 * Esta es otra línea
+		 */
+	}
+	
+}
