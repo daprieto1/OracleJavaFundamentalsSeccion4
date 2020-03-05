@@ -15,29 +15,37 @@ public class ProductTester {
 		products.add(new Product("0003", "Aceite", 2354L, 4600.0));
 		products.add(new Product("0004", "Arroz", 235L, 5700.0));
 		products.add(new Product("0005", "Leche", 2235L, 5700.0));
-		products.add(new Product("0006", "Huevos", 2355L, 5400.0));		
+		products.add(new Product("0006", "Huevos", 2355L, 5400.0));
 
 		Scanner sc = new Scanner(System.in);
-		for (int i = 0; i < 1; i++) {
-			Product p = new Product();
-			System.out.println("Ingrese la información del producto " + (i + 1));
+		char moreProducts = 'Y';
 
-			System.out.print("SKU: ");
-			p.setSku(sc.nextLine());
+		do {
+			System.out.println("¿Desea agregar más productos?");
+			String response = sc.nextLine();
+			moreProducts = response.charAt(0);
+			if (moreProducts == 'Y') {
+				Product p = new Product();
+				System.out.println("Ingrese la información del producto");
 
-			System.out.print("Name: ");
-			p.setName(sc.nextLine());
+				System.out.print("SKU: ");
+				p.setSku(sc.nextLine());
 
-			System.out.print("Units: ");
-			p.setNumberUnits(sc.nextLong());
+				System.out.print("Name: ");
+				p.setName(sc.nextLine());
 
-			System.out.print("Price: ");
-			p.setUnitPrice(sc.nextDouble());
+				System.out.print("Units: ");
+				p.setNumberUnits(sc.nextLong());
 
-			products.add(p);
+				System.out.print("Price: ");
+				p.setUnitPrice(sc.nextDouble());
 
-		}
-		
+				products.add(p);
+				sc.nextLine();
+			}
+			
+		} while (true);
+
 		products.stream().forEach(p -> System.out.println(p.toString()));
 
 	}
