@@ -9,6 +9,7 @@ public class Product {
 	private String name;
 	private long numberUnits;
 	private Double unitPrice;
+	private boolean active;
 
 	/**
 	 * Constructor without fields
@@ -18,6 +19,7 @@ public class Product {
 		this.name = "no name";
 		this.numberUnits = 0;
 		this.unitPrice = 0.0;
+		this.active = false;
 	}
 
 	/**
@@ -34,6 +36,7 @@ public class Product {
 		this.name = name;
 		this.numberUnits = numberUnits;
 		this.unitPrice = unitPrice;
+		this.active = true;
 	}
 
 	public String getSku() {
@@ -68,6 +71,14 @@ public class Product {
 		this.unitPrice = unitPrice;
 	}
 
+	public boolean isActive() {
+		return active;
+	}
+
+	public void setActive(boolean active) {
+		this.active = active;
+	}
+
 	@Override
 	public String toString() {
 		String result = "";
@@ -76,8 +87,14 @@ public class Product {
 		result += "\nName: " + this.name;
 		result += "\nQuantity in Stock: " + this.numberUnits;
 		result += "\nPrice: " + this.unitPrice;
+		result += "\nStock Value: $" + this.getStockValue();
+		result += "\nProduct Status: " + (this.active ? "Active" : "In-Active");		
 
 		return result;
+	}
+	
+	public double getStockValue() {
+		return this.unitPrice * this.numberUnits;
 	}
 
 }
