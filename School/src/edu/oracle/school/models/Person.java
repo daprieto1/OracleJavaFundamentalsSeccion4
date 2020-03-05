@@ -20,6 +20,11 @@ public class Person {
 	/*
 	 * Constructor
 	 */
+	
+	public Person() {
+		
+	}
+	
 	public Person(String name, char genere, long cedula, Date birthDate) {
 		this.name = name;
 		this.genere = genere;

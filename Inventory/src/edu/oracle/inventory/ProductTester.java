@@ -44,7 +44,7 @@ public class ProductTester {
 				sc.nextLine();
 			}
 			
-		} while (true);
+		} while (moreProducts == 'Y');
 
 		products.stream().forEach(p -> System.out.println(p.toString()));
 
