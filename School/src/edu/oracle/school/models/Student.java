@@ -75,6 +75,21 @@ public class Student extends Person {
 		return grade < 70 ? 'F' : (grade < 80 ? 'C' : (grade < 90 ? 'B' : 'A'));
 	}
 
+	public void setSchedule(String[][] schedule) {
+		this.schedule = schedule;
+	}
+
+	public void printSchedule() {
+		for (int i = 0; i < this.schedule.length; i++) {
+			System.out.println("Horario del día " + (i + 1));
+			for (int j = 0; j < this.schedule[i].length; j++) {
+				String course = this.schedule[i][j];
+				System.out.print((course == null ? "" : course) + " - ");
+			}
+			System.out.println("\n");
+		}
+	}
+
 	public String getGradeMessage(char literalGrade) {
 		/*
 		 * if (literalGrade == 'A') { return "DIRECTOR: El alumno es muy bueno"; } else

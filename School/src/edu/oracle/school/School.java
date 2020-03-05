@@ -24,14 +24,43 @@ public class School {
 		String[] cursos2 = { "Informatica", "Ciencias", "matemáticas" };
 
 		Teacher t1 = new Teacher(cursos);
-		t1.printCourses();
-		
-		System.out.println();
-		
 		Teacher t2 = new Teacher(cursos2);
-		t2.printCourses();
 
-		// Ciencias
+		String[][] schedule = new String[5][8];
+		// Lunes
+		schedule[0][0] = "Buenos Días";
+		schedule[0][1] = "Matemáticas";
+		schedule[0][2] = "Matemáticas";
+		schedule[0][7] = "Arte";
+
+		// Martes
+		schedule[1][0] = "Buenos Días";
+		schedule[1][7] = "Arte";
+
+		// Miercoles
+		schedule[2][0] = "Buenos Días";
+		schedule[2][1] = "Matemáticas";
+		schedule[2][2] = "Matemáticas";
+		schedule[2][7] = "Arte";
+
+		// Jueves
+		schedule[3][0] = "Buenos Días";	
+		schedule[3][7] = "Arte";
+
+		// Viernes
+		schedule[4][0] = "Buenos Días";
+		schedule[4][1] = "Matemáticas";
+		schedule[4][2] = "Matemáticas";
+		schedule[4][7] = "Arte";
+		
+		s1.setSchedule(schedule);
+		s1.printSchedule();
+		
+		Object [][] multiData = new Object[3][3];
+		multiData[0][0] = 1;
+		multiData[0][0] = "Hola";
+		multiData[0][0] = true;
+		multiData[0][0] = 0.0;
 	}
 
 }
