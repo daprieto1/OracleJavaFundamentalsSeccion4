@@ -90,6 +90,21 @@ public class Student extends Person {
 		}
 	}
 
+	public void printSchedule(int day) {
+		System.out.println("Horario del día " + (day + 1));
+
+		for (int i = 0; i < this.schedule[day].length; i++) {
+			String course = this.schedule[day][i];
+			System.out.print((course == null ? "" : course) + " - ");
+		}
+	}
+
+	public void printSchedule(int day, int section) {
+		System.out.println("Horario del día " + (day + 1) + " y la seccion " + (section + 1));
+		String course = this.schedule[day][section];
+		System.out.println((course == null ? "" : course) + " - ");
+	}
+
 	public String getGradeMessage(char literalGrade) {
 		/*
 		 * if (literalGrade == 'A') { return "DIRECTOR: El alumno es muy bueno"; } else

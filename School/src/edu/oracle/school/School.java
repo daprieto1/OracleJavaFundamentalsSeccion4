@@ -53,14 +53,19 @@ public class School {
 		schedule[4][2] = "Matemáticas";
 		schedule[4][7] = "Arte";
 		
+		
+		
 		s1.setSchedule(schedule);
+		
+		System.out.println("TODO EL HORARRIO");	
 		s1.printSchedule();
 		
-		Object [][] multiData = new Object[3][3];
-		multiData[0][0] = 1;
-		multiData[0][0] = "Hola";
-		multiData[0][0] = true;
-		multiData[0][0] = 0.0;
+		System.out.println("HORARIO DE UN DIA ESPECIFICO");
+		s1.printSchedule(0);
+		
+		System.out.println("HORARRIO DE UN DIA Y UNA MATERIA EN ESPECIFICO");
+		s1.printSchedule(0, 1);
+		
 	}
 
 }
